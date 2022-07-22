@@ -12,9 +12,11 @@ module.exports = {
       }
     ],
   },
+  optimization: {
+    moduleIds: 'named',
+  },
   // webpack configuration
   plugins: [
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new mockPlugin()
   ]
